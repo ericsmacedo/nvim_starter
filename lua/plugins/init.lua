@@ -14,7 +14,9 @@ return {
   },
     
   -- Plugin used to align text inside neovim
-  {"godlygeek/tabular"},
+  {
+      "godlygeek/tabular"
+  },
 
   {
       'MeanderingProgrammer/render-markdown.nvim',
@@ -28,6 +30,20 @@ return {
   
   },
 
+  -- Configuration for the fuzzy finder.
+  -- used to exclude certain folders from the search
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+            defaults = {
+                file_ignore_patterns = {
+                    "env/",
+                    "__pycache__/",
+                    "xcelium.d/"
+                },
+            },
+        },
+  },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 

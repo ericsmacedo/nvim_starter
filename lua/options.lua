@@ -31,9 +31,9 @@ vim.g.python3_host_prog = vim.call("expand", "~/.config/nvim/env/bin/python")
 -- " CUSTOM INDENTATION
 -- "===================================================================
 local set_ident = function()
-    vim.o.tabstop = 4          -- number of spaces in tab when editing
-    vim.o.softtabstop = 4      -- number of spaces in tab when editing.
-    vim.o.shiftwidth = 4       -- number of spaces used for >> and <<
+    vim.o.tabstop = 3          -- number of spaces in tab when editing
+    vim.o.softtabstop = 3      -- number of spaces in tab when editing.
+    vim.o.shiftwidth = 3       -- number of spaces used for >> and <<
     vim.o.expandtab = true     -- tabs are spaces
 end
 
